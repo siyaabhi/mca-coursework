@@ -1,0 +1,29 @@
+//Search for all the occurrences of an element in an integer array (positions) 
+#include<stdio.h>
+int main()
+{
+    int a[100], n, i, key, found = 0;
+    printf("Enter the number of elements: ");
+    scanf("%d", &n);
+    printf("Enter the array elements:\n");
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    printf("Enter the element to search: ");
+    scanf("%d", &key);
+    printf("Element found at position(s): ");
+    for(i = 0; i < n; i++)
+    {
+        if(a[i] == key)
+        {
+            printf("%d ", i + 1);  
+            found = 1;
+        }
+    }
+    if(found == 0)
+    {
+        printf("Element not found");
+    }
+    return 0;
+}
