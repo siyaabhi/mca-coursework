@@ -1,6 +1,6 @@
 Read n Strings and display them in the ascending order.
 
-#include <stdio.h>
+#include<stdio.h>
 #include <string.h>
 int main()
 {
