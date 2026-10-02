@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+ int p[20];
+ int degree,i;
+printf("enter the degree of polynomials:");
+scanf("%d",&degree);
+printf("enter the coeffecients:");
+for (i=0;i<=degree;i++)
+{
+	printf("coeffecient of x^%d is ",i);
+	scanf("%d",&p[i]);
+ } 
+ printf("\n polynomial is ");
+ for(i=degree;i>=0;i--)
+ {
+        printf("%dx^%d", p[i], i);
+ 
+ if (i!= 0)
+ {
+ 	printf(" + ");
+ }
+}
+return 0;
+}
