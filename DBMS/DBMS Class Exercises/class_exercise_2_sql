@@ -4,7 +4,7 @@ SELECT * FROM EMPLOYEE1;
 
 SELECT EmpNo,
 EmpName,
-       DOB,
+DOB, 
        Salary
 FROM EMPLOYEE1
 WHERE Salary > 30000
