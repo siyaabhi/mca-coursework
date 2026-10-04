@@ -23,5 +23,5 @@ Opens at http://localhost:8501
 
 With "No Error" the receiver remainder is all zeros. Flipping any single bit gives a non-zero remainder (ERROR DETECTED).
 
-## Viva summary
+## summary
 CRC treats data as a polynomial and divides it by a generator polynomial using XOR (no carries). The sender appends r zeros (r = generator length - 1), divides, and replaces the zeros with the remainder. The receiver divides the whole frame; remainder 0 means no error detected. CRC detects all single-bit errors, all burst errors up to r bits, and all odd numbers of errors if the generator has an x+1 factor. Some error patterns divisible by the generator go undetected. It detects errors but cannot correct them, so the frame is discarded and retransmitted.
